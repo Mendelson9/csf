@@ -36,6 +36,15 @@ print root2
 
 print "Problem 2 solution follows:"
 
+import hw1_test
+print hw1_test.a
+print hw1_test.b
+print hw1_test.c
+print hw1_test.d
+print hw1_test.e
+print hw1_test.f
+
+
 # ... write your code and comments here (and remove this line)
 
 
@@ -44,8 +53,20 @@ print "Problem 2 solution follows:"
 ###
 
 print "Problem 3 solution follows:"
+#((a and b) or (not c) and not (d or e or f))
 
-# ... write your code and comments here (and remove this line)
+g = hw1_test.a == hw1_test.b
+h = not hw1_test.c
+i = not hw1_test.d | hw1_test.e |hw1_test.f
+
+j = g | h
+k = j != i
+print k
+
+
+
+
+# Each line tests one part of the question for g, h, and i. J and k repersent the "or" and "and not" in the question.
 
 
 ###
@@ -59,6 +80,4 @@ print "Problem 3 solution follows:"
 ### Reflection
 ###
 
-# ... Write how long this assignment took you, including doing all the readings
-# ... and tutorials linked to from the homework page. Did the readings, tutorials,
-# ... and lecture contain everything you needed to complete this assignment?
+# ... Took a long time to figure out question 1. restarted problem after lab and finished it in over an hour. That did not include the hour of reading the Python book last night.
