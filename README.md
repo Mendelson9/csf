@@ -1,4 +1,7 @@
-csf
+CSF
 ===
 
-Computer Science  mennic31
+Evergreen Login: mennic31
+
+Repository for COMPUTER SCIENCE FOUNDATIONS
+http://ada.evergreen.edu/csf/
