@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Nicholas Mendelson
+# Evergreen Login: mennic31
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 1
