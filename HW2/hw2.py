@@ -56,7 +56,14 @@ for num in range(2, 11):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 3 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+n = 10
+triangular = 0
+for i in range(n+1):
+    triangular += i
+
+print "Triangular number", n, "via loop:", triangular
+print "Triangular number", n, "via formula:", n*(n+1)/2
+
 
 ###
 ### Problem 4
@@ -65,7 +72,9 @@ print "Problem 3 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 4 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+result = 1
+
+
 
 ###
 ### Problem 5
@@ -74,7 +83,10 @@ print "Problem 4 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+for i in range(n):
+    result *=i+1
+    n = n-1
+    print result
 
 ###
 ### Problem 6
@@ -83,7 +95,21 @@ print "Problem 5 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+
+n = 10
+f1=1
+f2 = 1
+for i in range(n):
+    f2 = f2 + (1/f1)
+    f1=1
+    x = n-i 
+    for j in range(x):
+        f1= f1*(j+1)/1.0
+        
+    print f2
+
+
+
 
 ###
 ### Collaboration
@@ -91,6 +117,7 @@ print "Problem 6 solution follows:"
 
 # ... List your collaborators and other sources of help here (websites, books, etc.),
 # ... as a comment (on a line starting with "#").
+# Grading partner: ngutro25
 
 ###
 ### Reflection
