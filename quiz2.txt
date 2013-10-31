@@ -1,5 +1,7 @@
 import lab2.py
 
+n = lab2.n
+
 if (n < 50):
      print ("less than 50")
      
