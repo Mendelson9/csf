@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Nicholas Mendelson
+# Evergreen Login: mennic31
 # Programming as a Way of Life
 # Homework 5: Election prediction
 

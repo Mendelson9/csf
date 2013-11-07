@@ -1,5 +1,5 @@
-Name: ...
-UW NetID: ...
+Name: Nicholas Mendelson
+UW NetID: mennic31
 CSE 140
 Homework 3: Election prediction
 
