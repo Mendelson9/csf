@@ -213,21 +213,21 @@ if __name__ == "__main__":
     # TODO: Uncomment these function calls as you complete each part, to test
     # your implementation:
 
-    test_read_csv()
-    test_row_to_edge()
-    test_state_edges()
-    test_earlier_date()
-    #test_most_recent_poll_row()
+    #test_read_csv()
+    #test_row_to_edge()
+    #test_state_edges()
+    #test_earlier_date()
+    test_most_recent_poll_row()
     #test_unique_column_values()
     #test_pollster_predictions()
     #test_average_error()
     #test_pollster_errors()
     #test_pivot_nested_dict()
     #test_weighted_average()
-    test_pollster_to_weight()
-    test_average_error_to_weight()
+    #test_pollster_to_weight()
+    #test_average_error_to_weight()
     #test_average_edge()
     #test_predict_state_edges()
-    test_electoral_college_outcome()
+    #test_electoral_college_outcome()
 
     print "Tests passed."

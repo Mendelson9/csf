@@ -35,8 +35,17 @@ def state_edges(election_result_rows):
     The input list does has no duplicate states;
     that is, each state is represented at most once in the input list.
     """
-    #TODO: Implement this function
-    pass
+    
+    
+    #had trouble getting function to work. found 2 ways I think you can do it but can't figure out how to test in canopy.
+    state_edges = {}
+    for row in election_result_rows:
+        state_edges[str(row["State"])] = row_to_edge(row)
+    return state_edges
+    
+    ### not sure if this is the same thing ###
+    #return ({"State": (row["State"]), "Edges": row_to_edge(row)})
+    
 
 
 ################################################################################
@@ -55,9 +64,11 @@ def most_recent_poll_row(poll_rows, pollster, state):
     Given a list of poll data rows, returns the most recent row with the
     specified pollster and state. If no such row exists, returns None.
     """
-    #TODO: Implement this function
-    pass
-
+    recent_polls = {}
+    for row in poll_rows, pollster, state:
+        x = (row, 'ID', 'State')
+        recent_polls[x] = (['ID', 'State', 'Pollster', 'Date'])
+    return recent_polls
 
 ################################################################################
 # Problem 3: Pollster predictions
