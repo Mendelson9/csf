@@ -17,8 +17,17 @@
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 3 solution follows:"
 
-# ... write your code and comments here (and remove this line)
-
+names = dict()
+names['Brieanna'] = 'Fresno'
+names['Nicolas'] = 'Olympia'
+for value in names.itervalues():
+    print value
+names['Rayne'] = 'San Jose'
+names['Ronald'] = 'Eureka'
+names['Lisa'] = 'Bellingham'
+names['Bill'] = 'New York'
+del names['Brieanna']
+del names['Nicolas']
 
 ###
 ### Problem 4
@@ -27,8 +36,12 @@ print "Problem 3 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 4 solution follows:"
 
-# ... write your code and comments here (and remove this line)
-
+mammals = []
+mammals.append('cat')
+mammals.append('dog')
+mammals.append('elephant')
+for value in mammals:
+    print value
 
 ###
 ### Problem 5
@@ -37,7 +50,13 @@ print "Problem 4 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+def printlist(stuff):
+    for i in stuff:
+        print i
+sandwich = ['rubin', 'BLT', 'burger']
+capitals = ['Paris', 'Berlin', 'Tokyo']
+printlist(sandwich)
+printlist(capitals)
 
 ###
 ### Problem 6
@@ -46,7 +65,11 @@ print "Problem 5 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+test1 = {'Person': 'John', 'Midterm': 78, 'Final': 89}
+test2 = {'Person': 'Jane', 'Midterm': 97, 'Final': 67}
+test3 = {'Person': 'Jacob', 'Midterm': 82, 'Final': 84}
+test4 = {'Person': 'Jay', 'Midterm': 56, 'Final': 99}
+Test_Scores = [test1, test2, test3, test4]
 
 ###
 ### Problem 7
@@ -55,11 +78,14 @@ print "Problem 6 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 7 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+for i in Test_Scores:
+    name = i['Person']
+    midterm = i['Midterm']
+    final = i['Final']
+    print "The difference between " + name + "'s scores is: " + str(abs(midterm - final))
 
 ###
 ### Collaboration
 ###
 
-# ... List your collaborators and other sources of help here (websites, books, etc.),
-# ... as a comment (on a line starting with "#").
+# Brieanna Benson
