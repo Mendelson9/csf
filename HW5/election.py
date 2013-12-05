@@ -12,7 +12,9 @@ def read_csv(path):
     Reads the CSV file at path, and returns a list of rows. Each row is a
     dictionary that maps a column name to a value in that column, as a string.
     """
-    output = []
+    edge = {}
+    
+
     for row in csv.DictReader(open(path)):
         output.append(row)
     return output

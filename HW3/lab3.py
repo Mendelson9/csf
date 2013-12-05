@@ -5,7 +5,7 @@
 # Homework 3
 
 
-n = 12
+n = 10
 x = 0
 series = 'fibonacci'
 f1 = 1
