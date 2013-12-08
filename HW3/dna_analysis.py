@@ -31,7 +31,7 @@ filename = sys.argv[1]
 inputfile = open(filename)
 
 # All the nucleotides in the input file that have been read so far.
-#seq = ""
+seq = ""
 # The current line number (= the number of lines read so far).
 linenum = 0
 
@@ -65,7 +65,7 @@ for bp in seq:
     if bp == 'C' or bp == 'G':
         # increment the count of gc
         gc_count = gc_count + 1
-        
+    #or, if the bp is an A or a T    
     if bp == 'A' or bp == 'T':
         at_count = at_count + 1
         

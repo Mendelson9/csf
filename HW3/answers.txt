@@ -23,17 +23,17 @@ GC-content: 0.3
 
 Problem 3:
 
-Comenting out seq gives an error in the next for loop where seq is not defined in line 45
-g
+Commenting out seq gives an error in the next for loop where seq is not defined in line 45
+Commenting out linenum led to an error in line 40 about not beingg defined.
+Commenting out gc_count leads to it not being defined like the other examples
 
 Problem 4:
 
-...
+GC-content: 0.3
+AT-contnet: 0.7
 
 Collaboration:
 
-...
+Zack (not sure of his last name.)
 
-Reflection:
 
-...
