@@ -31,7 +31,7 @@ filename = sys.argv[1]
 inputfile = open(filename)
 
 # All the nucleotides in the input file that have been read so far.
-seq = ""
+#seq = ""
 # The current line number (= the number of lines read so far).
 linenum = 0
 

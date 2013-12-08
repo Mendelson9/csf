@@ -1,5 +1,5 @@
-Name: ...
-Evergreen Login: ...
+Name: Nicholas Mendelson
+Evergreen Login: mennic31
 Computer Science Foundations
 Programming as a Way of Life
 Fall 2013
@@ -23,7 +23,8 @@ GC-content: 0.3
 
 Problem 3:
 
-...
+Comenting out seq gives an error in the next for loop where seq is not defined in line 45
+g
 
 Problem 4:
 
