@@ -19,13 +19,20 @@ practice_graph = nx.Graph()
 practice_graph.add_node("A")
 practice_graph.add_node("B")
 practice_graph.add_node("C")
-
+practice_graph.add_node("D")
+practice_graph.add_node("E")
+practice_graph.add_node("E")
 
 
 practice_graph.add_edge("A", "B")
 practice_graph.add_edge("A", "C")
 practice_graph.add_edge("B", "C")
-# TODO: Add more here...
+practice_graph.add_edge("B", "D")
+practice_graph.add_edge("D", "C")
+practice_graph.add_edge("D", "E")
+practice_graph.add_edge("D", "F")
+practice_graph.add_edge("C", "F")
+
 
 assert len(practice_graph.nodes()) == 6
 assert len(practice_graph.edges()) == 8
