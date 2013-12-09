@@ -55,6 +55,12 @@ total_count = 0
 gc_count = 0
 at_count = 0
 
+g_count = 0
+c_count = 0
+a_count = 0
+t_count = 0
+
+
 
 # for each base pair in the string,
 for bp in seq:
@@ -69,12 +75,49 @@ for bp in seq:
     if bp == 'A' or bp == 'T':
         at_count = at_count + 1
         
+    if bp == 'G':
+        g_count = g_count + 1
+        
+    if bp == 'C':
+        c_count = c_count + 1
+        
+    if bp == 'A':
+        a_count = a_count + 1
+        
+    if bp == 'T':
+        t_count = t_count + 1
+    
+        
 
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
 
+#add the ATCG count together
+sum_count = g_count + c_count + a_count + t_count
+
+
+#AT/GC ratio, defined as (A+T)/(G+C)
+atgc_ratio = float(a_count + t_count) / float(g_count + c_count)
+
+
+if gc_content >= 60:
+    gc_print = "high GC content"
+    
+if gc_content <= 40:
+    gc_print = "low GC content"
+
+
 # Print the answer
 print 'GC-content:', gc_content
 print "AT-contnet:", at_content
+print "G count:", g_count
+print "C count:", c_count
+print "A count:", a_count
+print "T count:", t_count
+print "Sum count:", sum_count
+print "Total count:", total_count
+print "Seq length:", str(len(seq))
+print "AT/GC Ratio:", atgc_ratio
+print gc_print
