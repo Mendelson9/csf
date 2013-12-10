@@ -44,14 +44,44 @@ def draw_practice_graph():
 
 # Comment out this line after you have visually verified your practice graph.
 # Otherwise, the picture will pop up every time that you run your program.
-draw_practice_graph()
+#draw_practice_graph()
 
 
 ###
 ### Problem 1b
 ###
 
-# (Your code goes here.)
+rj = nx.Graph()
+
+rj.add_node("Romeo")
+rj.add_node("Benvolio")
+rj.add_node("Montague")
+rj.add_node("Escalus")
+rj.add_node("Paris")
+rj.add_node("Mercutio")
+rj.add_node("Juliet")
+rj.add_node("Capulet")
+rj.add_node("Tybalt")
+rj.add_node("Friar Laurence")
+rj.add_node("Nurse")
+
+rj.add_edge("Escalus", "Paris")
+rj.add_edge("Escalus", "Mercutio")
+rj.add_edge("Paris", "Mercutio")
+rj.add_edge("Romeo", "Benvolio")
+rj.add_edge("Romeo", "Montague")
+rj.add_edge("Benvolio", "Montague")
+rj.add_edge("Juliet", "Tybalt")
+rj.add_edge("Juliet", "Capulet")
+rj.add_edge("Tybalt", "Capulet")
+rj.add_edge("Juliet", "Nurse")
+rj.add_edge("Juliet", "Friar Laurence")
+rj.add_edge("Juliet", "Romeo")
+rj.add_edge("Capulet", "Escalus")
+rj.add_edge("Capulet", "Paris")
+rj.add_edge("Romeo", "Friar Laurence")
+rj.add_edge("Romeo", "Mercutio")
+rj.add_edge("Escalus", "Montague")
 
 assert len(rj.nodes()) == 11
 assert len(rj.edges()) == 17
@@ -65,7 +95,7 @@ def draw_rj():
 # Comment out this line after you have visually verified your rj graph and
 # created your PDF file.
 # Otherwise, the picture will pop up every time that you run your program.
-draw_rj()
+#draw_rj()
 
 
 ###
