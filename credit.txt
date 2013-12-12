@@ -1,0 +1,12 @@
+Do the following to get credit:
+
+* Commit and sync romeo-and-juliet.pdf and social_network.py from hw8
+  to your github repo (so that you can see it on the website)
+* Find your hw6 problems that you wrote with Brieanna and commit them as hw6-ours.html
+  in your github repo (please read the e-mail and follow those instructions).
+* Write and submit self-evals and faculty evaluations for me, Neal, and Sherri online at my.evergreen.edu
+
+Do this before 5pm tomorrow (Friday).
+Show up for tutoring from 10am-3pm tomorrow in LIB 2610 or 2612 (Check both) to get help with the above.
+
+Thanks, Paul
