@@ -108,20 +108,27 @@ def friends(graph, user):
     """
     return set(graph.neighbors(user))
 
-print friends(rj, "Mercutio")
+print friends(rj, "Friar Laurence")
 
 def friends_of_friends(graph, user):
     """Returns a set of friends of friends of the given user, in the given graph.
     The result does not include the given user nor any of that user's friends.
     """
-    friends_of_friends_set =set([])
+    friends_of_friends_set =set()
     friends_set = friends(graph, user)
     for x in friends_set:
-        friends_of_friends_set = friends_of_friends_set.union(set(friends(rj, x)))
+        temp = friends(graph, x)
+        friends_of_friends_set.update(temp)
     friends_of_friends_set.remove(user)
+    
+    for x in friends_set:
+        if x in friends_of_friends_set:
+            friends_of_friends_set.remove(x)
+    
+            
     return friends_of_friends_set
 
-print friends_of_friends(rj, "Mercutio") 
+print friends_of_friends(rj, "Friar Laurence") 
 
 assert friends_of_friends(rj, "Mercutio") == set(['Benvolio', 'Capulet', 'Friar Laurence', 'Juliet', 'Montague'])
 
