@@ -139,7 +139,14 @@ assert friends_of_friends(rj, "Mercutio") == set(['Benvolio', 'Capulet', 'Friar 
 
 def common_friends(graph, user1, user2):
     """Returns the set of friends that user1 and user2 have in common."""
-    print "To be implemented"
+    friend1 = friends(graph, user1)
+    friend2 = friends(graph, user2)
+    common = friend1.intersection(friend2)
+    return common
+
+    
+#code to test the common friends program    
+#print common_friends(rj, 'Mercutio', 'Capulet')
 
 assert common_friends(practice_graph,"A", "B") == set(['C'])
 assert common_friends(practice_graph,"A", "D") == set(['B', 'C'])
